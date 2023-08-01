@@ -1,0 +1,18 @@
+header {
+    box-shadow: 0px 0px 6px #888888;
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    padding: 15px 0 15px 0;
+}
+.header {
+    &__logo {
+       @include flex-center; 
+       &--img {
+        width: 200px;
+        height: auto;
+        min-width: 150px;
+       }
+    }
+}   

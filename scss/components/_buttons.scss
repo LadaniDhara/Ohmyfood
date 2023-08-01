@@ -1,0 +1,17 @@
+.btn {
+    border-radius: 45%;
+    padding: 18px;
+    border-radius: 100px;
+    height: 55px;
+    padding: 18px;
+    border: none;
+    transition: all 600ms;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.13);
+    &--bkmenu {
+        color: white;
+        background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC 153%);
+    }
+}

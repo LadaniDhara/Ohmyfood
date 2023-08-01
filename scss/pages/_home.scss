@@ -1,0 +1,72 @@
+.place {
+    @include flex-center;
+    background-color: $dark-gray-color;
+    font-size: 18px;
+    &__icon {
+        @include icon;
+    }
+}
+.bookmenu {
+    @include flex-center;
+    @include flex-column;
+    background-color: $light-gray-color;
+    line-height: 17px;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    h2 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 17px;
+        font-weight: 100;
+    }
+}
+
+.selection {
+    padding: 0 20px 20px 20px;
+    .list {
+        padding: 20px;
+        h2 {
+            font-size: 25px;
+        }
+    }
+    &__card {
+        height: 85px;
+        background-color: $light-gray-color;
+        width: 85%;
+        max-width: 1000px;
+        border-radius: 20px;
+        margin: 30px;
+        box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.13);
+        &-number {
+            background-color: $primary-color;
+            color: white;
+            border-radius: 1000px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            margin-top: 45px;
+            padding: 10px;
+        }
+        &-details {
+            @include flex-start;
+            height: 100%;
+            margin: 0.5px;
+        }
+        &-icon {
+            width: 10px;
+            font-size: 24px;
+            padding-left: 40px;
+            &--primarycolor{
+                color: $primary-color;
+            }
+        }
+        &-text {
+            font-size: 20px;
+            padding-left: 52px;
+            font-weight: 600;
+        }
+        &--primarycolor{
+            background-color: rgba($primary-color, 0.2);
+        }        
+    }
+}

@@ -3,10 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css"
-    <title>Document</title>
+    <link rel="stylesheet" href="scss/main.css" type="text/css">
+    <link href="scss/normalize.css" type="text/css" rel="stylesheet">
+    <title></title>
 </head>
 <body>
+    <!--Header Section-->
+    <header>
+        <div class="container">
+            <div class="header__logo">
+                <img src="images/logo/ohmyfood@2x.svg" alt="ohmyfood logo" class="header__logo--img"/>
+            </div>  
+        </div>
+    </header> 
+
+    <!--main Section-->
+    <main>
+        <div class="container">
+            <div class="place">
+                <p><i class="fas fa-map-marker-alt place__icon"></i>Paris, Belleville</p>
+            </div>
+            <div class="bookmenu">
+                <h2>Book the menu you like</h2>
+                <h4>Discover top-of-the-art restaurants we <br> picked for you</h4>
+                <button class="btn btn--bkmenu">Explore our restaurants</button>
+            </div>
+        </div>
+
+        <section class="selection">
+            <div class="container">
+                <div class="list">
+                    <h2>How it works</h2>
+                    <div class="selection__card">
+                        <div class="selection__card-number">1</div>
+                        <div class="selection__card-details">
+                            <i class="fas fa-mobile-alt selection__card-icon"></i>
+                            <p class="selection__card-text">Chose a restaurant</p>
+                        </div>
+                    </div>
+                    <div class="selection__card">
+                        <div class="selection__card-number">2</div>
+                        <div class="selection__card-details">
+                            <i class="fas fa-list-ul selection__card-icon"></i>
+                            <p class="selection__card-text">Create your menu</p>
+                        </div>
+                    </div>
+                    <div class="selection__card selection__card--primarycolor">
+                        <div class="selection__card-number">3</div>
+                        <div class="selection__card-details">
+                            <i class="fas fa-store selection__card-icon selection__card-icon--primarycolor"></i>
+                            <p class="selection__card-text">GO enjoy it at the restaurant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+               
+    </main>
+               
+    <!--footer Section-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__logo">
+                <img src="images/logo/ohmyfood@2x.svg" alt="logo" class="footer__logo--img2">
+            </div>
+            <div class="footer__list">
+				<a href="#" class="footer__list--bold"><i class="fas fa-utensils footer__list-icon"></i>Suggest a restaurant</a><br>
+				<a href="#" class="footer__list--bold"><i class="fas fa-hands-helping footer__list-icon"></i>Become a partner</a><br>
+				<a href="#" class="footer__list">Legal</a><br>
+                <a href="#" class="footer__list">Contact</a>
+            </div>        
+        </div>
+    </footer>
     
 </body>
 </html>
