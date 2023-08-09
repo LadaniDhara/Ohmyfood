@@ -148,10 +148,10 @@
             flex: 0 0 48.33%;
         }
         @include desktop-view {
-            flex: 0 0 22%;
+            flex: 0 0 48%;
         }
         &-img {
-            height: 200px;
+            height: 340px;
             position: relative;
             img {
                 width: 100%;

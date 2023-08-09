@@ -347,11 +347,11 @@ header {
 }
 @media (min-width: 1000px) and (max-width: 1600px) {
   .restaurant__desc {
-    flex: 0 0 22%;
+    flex: 0 0 48%;
   }
 }
 .restaurant__desc-img {
-  height: 200px;
+  height: 340px;
   position: relative;
 }
 .restaurant__desc-img img {
