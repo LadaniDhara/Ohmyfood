@@ -2,27 +2,27 @@
     background-color: darken($dark-gray-color, 65%);
     color: $white-color;
     padding-left: 20px;  
-    &__logo {
-        &--img2{
-            width: 125px;
+    &__title {
+        padding-top: 20px;
+        &-text {
+            font-family: $font-title;
+            width: 150px;
             height: auto;
             padding-bottom: 10px;
             padding-top: 15px;
         }
     } 
-
     &__list {
         line-height: 27px;
         text-decoration: none;
         font-size: 18px;
-        &--bold{
-            font-weight: 500;
-            text-decoration: none;
+        &-color {
+            color: $white-color;
         }
         &-icon{
             @include icon;
         }
-    }      
+    }    
 }
 
     

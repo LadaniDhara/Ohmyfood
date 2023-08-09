@@ -1,7 +1,6 @@
 .place {
     @include flex-center;
     background-color: $dark-gray-color;
-    font-size: 18px;
     &__icon {
         @include icon;
     }
@@ -10,63 +9,210 @@
     @include flex-center;
     @include flex-column;
     background-color: $light-gray-color;
-    line-height: 17px;
     padding-top: 15px;
     padding-bottom: 60px;
-    h2 {
-        font-size: 25px;
-    }
+    text-align: center;
     h4 {
-        font-size: 17px;
-        font-weight: 100;
+        line-height: 26px;
+    }
+    a {
+        color: white;
     }
 }
 
 .selection {
     padding: 0 20px 20px 20px;
-    .list {
+    &__container {
         padding: 20px;
-        h2 {
-            font-size: 25px;
+        @include mobile-view {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
         }
     }
+    &__block {
+        @include tablet-view {
+            padding-top: 30px;
+            display: flex;
+        } 
+        @include desktop-view {
+            padding-top: 30px;
+            @include flex-center;
+        }  
+
+    }
     &__card {
-        height: 85px;
-        background-color: $light-gray-color;
-        width: 85%;
-        max-width: 1000px;
+        background-color: #f7f7f7;
         border-radius: 20px;
         margin: 30px;
         box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.13);
+        &:hover {
+            i {
+                color: $primary-color;
+            }                       
+        }
+        @include tablet-view {
+            margin-left: 2px;
+            width: max-content;
+            padding: 10px;
+        }
+        @include desktop-view {
+            width: max-content;
+        }
         &-number {
             background-color: $primary-color;
             color: white;
-            border-radius: 1000px;
+            border-radius: 50%;
             position: absolute;
-            transform: translate(-50%, -50%);
-            margin-top: 45px;
             padding: 10px;
+            transform: translate(-50%, 35%);
+            @include tablet-view {
+                transform: translate(-77%, 21%);
+            }
         }
         &-details {
             @include flex-start;
             height: 100%;
             margin: 0.5px;
+            @include tablet-view {
+                margin: 0px;
+            }
+            @include mobile-horizontal {
+                margin-left: 30.5px;                
+            }
+            @include desktop-view {
+                margin-left: 30.5px;                
+            }
         }
         &-icon {
             width: 10px;
             font-size: 24px;
-            padding-left: 40px;
-            &--primarycolor{
-                color: $primary-color;
+            color: darken($light-gray-color, 30%);
+            @include mobile-view {
+                padding-left: 40px;
+            }
+            @include tablet-view {
+                padding-left: 20px;
             }
         }
         &-text {
-            font-size: 20px;
             padding-left: 52px;
-            font-weight: 600;
+            padding-right: 30px;
+            @include tablet-view {
+                padding-left: 37px;
+                padding-right: 0px;
+                h3 {
+                    font-size: 17px;
+                }
+            }
+            @include desktop-view {
+                padding-left: 35px;
+            }
         }
-        &--primarycolor{
-            background-color: rgba($primary-color, 0.2);
-        }        
+                
     }
 }
+
+.restaurant {
+    padding-top: 10px;
+    &__container {
+        background: #F2F2F2;
+        padding: 25px 20px 0 20px;
+        position: relative;
+    }
+    &__row {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 20px 20px 100px 20px;
+        @include mobile-view {
+            flex-direction: column;
+        }
+        @include mobile-horizontal {
+            flex-direction: column;
+        }
+        @include tablet-view {
+            flex-direction: row;
+            @include flex-center;
+        }
+        @include desktop-view {
+            flex-direction: row;
+            @include flex-center;
+        }
+    }
+    &__desc {
+        box-shadow: 2px 2px 2px 2px #d9d9d9;
+        border-radius: 20px;
+        background: white;
+        @include tablet-view {
+            flex: 0 0 48.33%;
+        }
+        @include desktop-view {
+            flex: 0 0 22%;
+        }
+        &-img {
+            height: 200px;
+            position: relative;
+            img {
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+                object-fit: cover;
+                height: 100%;   
+            }
+            span {
+                position: absolute;
+                left: auto;
+                right: 20px;
+                top: 30px;
+                bottom: auto;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 10px;
+                background-color: $tertiary-color;
+                color: darken($tertiary-color, 35%);
+                width: 70px;
+                height: 45px;
+                margin: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 12%;
+            } 
+        }
+        
+        &-details {
+            display: flex;
+            line-height: 2.5px;
+            padding-left: 15px;
+            justify-content: space-between;
+            padding-right: 19px;
+            padding-top: 10px;
+        }
+        &-info:hover {
+            -webkit-text-stroke: 1px transparent;
+            background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 27px;
+            color: white;
+            -webkit-text-stroke: 1px black;
+            cursor: pointer;
+            transition: all 600ms;
+            -webkit-transition: all 600ms;
+            &:hover {
+                -webkit-text-stroke: 1px transparent;
+                background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+        }   
+    }
+}
+

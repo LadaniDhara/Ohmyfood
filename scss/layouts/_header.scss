@@ -6,6 +6,7 @@ header {
     z-index: 1;
     padding: 15px 0 15px 0;
 }
+
 .header {
     &__logo {
        @include flex-center; 
@@ -14,5 +15,16 @@ header {
         height: auto;
         min-width: 150px;
        }
+    }
+    &__container {
+        align-items: center;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+        i { 
+            position: relative;
+            right: 130px;
+            font-size: 22px;
+        }
     }
 }   

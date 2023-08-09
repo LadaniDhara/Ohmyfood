@@ -1,12 +1,9 @@
-/*Import Roboto and Shrikhand font*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
-/*Import Font Awesome*/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-
 @import "./utils/variables";
 @import "./utils/mixins";
 
-@import "./base/base.scss";
+@import "./base/animation";
+@import "./base/base";
+@import "./base/typography";
 
 @import "./components/buttons";
 

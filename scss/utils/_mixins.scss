@@ -14,8 +14,35 @@
     align-items: center;
     justify-content: flex-start;
 }
+@mixin space-between {
+    display: flex;
+    justify-content: space-between;
+}
 
 @mixin icon {
     width: 10px;
     margin-right: 23px;
+}
+
+@mixin mobile-view {
+    @media (min-width:320px) and (max-width:567px) {
+        @content;
+    }
+}
+@mixin mobile-horizontal {
+    @media (min-width:568px) and (max-width:767px) {
+        @content;
+    }
+}
+
+@mixin tablet-view {
+    @media (min-width:768px) and (max-width:992px) {
+        @content;
+    }
+}
+
+@mixin desktop-view {
+    @media (min-width:1000px) and (max-width:1600px) {
+        @content;
+    }
 }

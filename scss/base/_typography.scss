@@ -1,0 +1,45 @@
+/* BOX-SIZING PROPERTY */
+html {
+    box-sizing: border-box;
+    font-family: $font-text;
+}
+  
+body {
+    font-family: $font-text;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+p {
+    font-family: $font-text;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1 {
+    font-family: $font-text;
+    font-size: 27px;
+}
+
+h2 {
+    font-family: $font-text;
+    font-size: 25px;
+}
+
+h3 {
+    font-family: $font-text;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+h4 {
+    font-family: $font-text;
+    font-weight: 100;
+    font-size: 18px;
+}
