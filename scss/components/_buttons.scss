@@ -10,8 +10,13 @@
     cursor: pointer;
     font-size: 20px;
     box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.13);
+    background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC 153%);
     &--bkmenu {
-        color: white;
-        background-image: linear-gradient(to bottom right, #FF79DA 10%, #9356DC 153%);
+        width: 282px;
+        height: 70px;
+    }
+    &--order {
+        width: 250px;
+        height: 70px;
     }
 }
