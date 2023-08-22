@@ -9,10 +9,10 @@
         max-width: 767px;
     }
     @include tablet-view {
-        max-width: 992px;
+        max-width: 991px;
     }
     @include desktop-view {
-        max-width: 1800px;
+        max-width: 100%;
     }
     
 }

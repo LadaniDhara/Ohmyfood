@@ -27,4 +27,25 @@ header {
             font-size: 22px;
         }
     }
-}   
+}  
+
+@include mobile-view {
+    .mobile-screen {
+        display: block;
+    }
+}
+@include mobile-horizontal {
+    .mobile-screen {
+        display: block;
+    }
+}
+@include tablet-view {
+    .mobile-screen {
+        display: none;
+    }
+}
+@include desktop-view {
+    .mobile-screen {
+        display: none;
+    }
+}

@@ -1,24 +1,31 @@
 .footer {
     background-color: darken($dark-gray-color, 65%);
     color: $white-color;
-    padding-left: 20px;  
+    padding-left: 20px; 
+    padding-bottom: 40px; 
+    padding-top: 20px;
     &__title {
-        padding-top: 20px;
+        padding-bottom: 10px;    
         &-text {
             font-family: $font-title;
             width: 150px;
             height: auto;
-            padding-bottom: 10px;
-            padding-top: 15px;
         }
     } 
     &__list {
-        line-height: 27px;
         text-decoration: none;
         font-size: 18px;
-        &-color {
+        line-height: 25px;
+        a {
             color: $white-color;
         }
+        :hover {
+            -webkit-text-stroke: 1px transparent;
+            background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        
         &-icon{
             @include icon;
         }

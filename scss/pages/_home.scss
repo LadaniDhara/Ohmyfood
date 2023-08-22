@@ -46,6 +46,7 @@
         border-radius: 20px;
         margin: 30px;
         box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.13);
+        min-width: 200px;
         &:hover {
             i {
                 color: $primary-color;
@@ -145,7 +146,7 @@
         border-radius: 20px;
         background: white;
         @include tablet-view {
-            flex: 0 0 48.33%;
+            flex: 0 0 47%;
         }
         @include desktop-view {
             flex: 0 0 48%;
@@ -191,7 +192,6 @@
         &-info:hover {
             -webkit-text-stroke: 1px transparent;
             background: linear-gradient(to bottom right, $secondary-color, $primary-color);
-            background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
         }
@@ -203,14 +203,12 @@
             color: white;
             -webkit-text-stroke: 1px black;
             cursor: pointer;
-            transition: all 600ms;
-            -webkit-transition: all 600ms;
             &:hover {
                 -webkit-text-stroke: 1px transparent;
                 background: linear-gradient(to bottom right, $secondary-color, $primary-color);
-                background-clip: text;
                 -webkit-background-clip: text;
                 color: transparent;
+                transition: all 600ms;
             }
         }   
     }
