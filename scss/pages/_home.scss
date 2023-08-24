@@ -145,12 +145,7 @@
         box-shadow: 2px 2px 2px 2px #d9d9d9;
         border-radius: 20px;
         background: white;
-        @include tablet-view {
-            flex: 0 0 47%;
-        }
-        @include desktop-view {
-            flex: 0 0 48%;
-        }
+        flex: 1 0 300px;
         &-img {
             height: 340px;
             position: relative;
@@ -213,4 +208,3 @@
         }   
     }
 }
-
