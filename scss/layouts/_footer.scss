@@ -16,7 +16,16 @@
     &__list {
         text-decoration: none;
         font-size: 18px;
-        line-height: 25px;
+        line-height: 15px;
+        @include flex-column;
+        @include tablet-view {
+            @include flex-row;
+            justify-content: space-evenly;
+        }
+        @include desktop-view {
+            @include flex-row;
+            justify-content: space-evenly;
+        }
         a {
             color: $white-color;
         }
@@ -28,7 +37,7 @@
         }
 
         &-icon{
-            @include icon;
+            margin-right: 10px;
         }
     }    
 }

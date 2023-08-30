@@ -8,6 +8,10 @@
     display: flex;
     flex-direction: column;
 }
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
 
 @mixin flex-start {
     display: flex;
@@ -23,9 +27,13 @@
     width: 10px;
     margin-right: 23px;
 }
-
+@mixin mobile-320 {
+    @media (max-width:320px) {
+        @content;
+    }
+}
 @mixin mobile-view {
-    @media (min-width:320px) and (max-width:567px) {
+    @media only screen and (max-width: 567px) {
         @content;
     }
 }
@@ -42,7 +50,33 @@
 }
 
 @mixin desktop-view {
-    @media (min-width:992px) and (max-width:1600px) {
+    @media (min-width:992px) {
         @content;
     }
 }
+
+// @mixin mobile-view {
+//     @media only screen and (max-width: 567px) {
+//         @content;
+//     }
+// }
+// @mixin mobile-horizontal {
+//     @media only screen and (max-width: 767px) {
+//         @content;
+//     }
+// }
+// @mixin tablet-view {
+//     @media only screen and (max-width: 991px) {
+//         @content;
+//     }
+// }
+// @mixin tablet-large {
+//     @media only screen and (max-width: 1024px) {
+//         @content;
+//     }
+// }
+// @mixin desktop-view {
+//     @media only screen and (max-width: 1600px) {
+//         @content;
+//     }
+// }
