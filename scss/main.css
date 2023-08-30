@@ -142,7 +142,7 @@ h4 {
 }
 .btn--bkmenu {
   width: 282px;
-  height: 70px;
+  height: 60px;
 }
 .btn--bkmenu:hover {
   background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
@@ -150,7 +150,8 @@ h4 {
 }
 .btn--order {
   width: 250px;
-  height: 70px;
+  height: 60px;
+  text-align: center;
 }
 .btn--order:hover {
   background-image: linear-gradient(to bottom right, #fface8, #ae80e5);
