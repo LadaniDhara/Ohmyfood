@@ -29,6 +29,11 @@
                 font-family: $font-title;
                 font-size: 47px;
             }
+            @include mobile-320 {
+                h1 {
+                    font-size: 30px;
+                }
+            }
         }
         &--icon {
             font-size: 40px;
@@ -36,6 +41,9 @@
             color: $dark-gray-color;
             -webkit-text-stroke: 2px black;
             cursor: pointer;
+            @include mobile-320 {
+                font-size: 30px;
+            }
             &:hover {
                 -webkit-text-stroke: 1px transparent;
                 background: linear-gradient(to bottom right, $secondary-color, $primary-color);
@@ -94,7 +102,12 @@
         width: 100%;
         padding: 20px;
         :hover {
-            width: 250px;
+            width: 300px;
+        }
+        @include mobile-320 {
+            :hover {
+                width: 100px;
+            }
         }
         &--item {
             white-space: nowrap;
@@ -142,7 +155,7 @@
         cursor: pointer; 
         i {
             transform: rotate(360deg);
-            transition: 600ms ease-in-out;
+            transition: 500ms ease-in-out;
         }
     }
 
