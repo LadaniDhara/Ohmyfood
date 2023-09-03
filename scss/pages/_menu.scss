@@ -102,8 +102,9 @@
         width: 100%;
         padding: 20px;
         :hover {
-            width: 300px;
+            //   width: 300px;
         }
+        
         @include mobile-320 {
             :hover {
                 width: 100px;
